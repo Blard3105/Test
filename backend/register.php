@@ -9,8 +9,10 @@ function save_db_supadb($FirstName, $LastName, $EmailAddress, $Pasw, $RePasw) {
 
 $URl = "$SUPABASE_URL/reset/v1/users/";
 $data = [
-    "email" => $email,
-    "password" => $pass,
+    "FirstName" => $FirstName,
+    "LastName" => $LastName,
+    "EmailAddress" => $Email,
+    "Pasw" => $Pasw,
 ];
 $optiosns = [
     "http" => [
